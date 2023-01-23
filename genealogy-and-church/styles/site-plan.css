@@ -4,9 +4,9 @@ Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Merienda&family=Patrick+Hand&display=swap');
 
 :root {
-  --primary-color: #E6F0EC;
+  --primary-color: #F2EEE4;
   --secondary-color: #5065A8;
-  --accent1-color: #F2EEE4;
+  --accent1-color: #E6F0EC;
   --accent2-color: white;
 
   --heading-font: 'Merienda', cursive;
