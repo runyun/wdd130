@@ -36,6 +36,14 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
     background-color: var(--secondary-color);
+    position: fixed;
+    width: 1800px;
+    height: 120px;
+    top:0;
+}
+
+main {
+    margin-top: 120px;
 }
 
 nav {
@@ -46,8 +54,8 @@ nav {
 }
 
 nav a {
-    padding: 40px;
-    font-size: 2em;
+    padding: 30px 100px;
+    font-size: 2.5em;
     color: var(--nav-link-color);
     text-decoration: none;
 }
@@ -60,77 +68,24 @@ nav a:hover {
 body {
     background-color: var(--paragraph-background-color);
     font-family: var(--paragraph-font);
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0;
     color: var(--secondary-color);
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-}
-
-#family_banner {
-   grid-column: 1/-1; 
-   grid-row: 1;
-
-   width: 100%;
-}
-
-h1 {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-color);
-    padding: 20px 80px;
-}
-
-p {
-    font-size: x-large;
-    line-height: 2em;
-}
-
-#family_quote {
-    grid-column: 2 / -2;
-    grid-row: 5 / 6;
-
-    height: fit-content;
-    width: fit-content;
-    border-radius: 15px;
-    border: 5px solid var(--secondary-color);
-    padding: 25px;
-    margin: 200px auto;
-}
-
-#family_quote q {
-    font-size: xx-large;
-}
-
-#family_quote p {
-    text-align: right;
-}
-
-#family_intro {
-    grid-column: 2 / 5;
-    grid-row: 8 / 10;
-}
-
-#family_intro + img {
-    grid-column: 6 / -2;
-    grid-row: 7 / 11;
-
-    width: 500px;
-    margin-bottom: 100px;
-    border-radius: 10px;
 }
 
 footer {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-color);
 }
 
 footer p {
@@ -146,4 +101,15 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: var(--primary-color);
+}
+
+.footer_icon {
+    width: 90px;
+    margin: 10px 50px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: x-large;
+    line-height: 2em;
 }
