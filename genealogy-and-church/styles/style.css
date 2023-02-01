@@ -37,7 +37,8 @@ header {
     grid-template-columns: 150px auto;
     background-color: var(--secondary-color);
     position: fixed;
-    width: 1800px;
+    width:100%;
+    max-width: 1800px;
     height: 120px;
     top:0;
 }
