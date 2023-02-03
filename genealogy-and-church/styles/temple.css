@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Patrick+Hand&display=swap');
+
+:root {
+  --primary-color: #F2EEE4;
+  --secondary-color: #5065A8;
+  --accent1-color: #E6F0EC;
+  --accent2-color: white;
+
+  --heading-font: 'Merienda', cursive;
+  --paragraph-font: 'Patrick Hand', cursive;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #5065A8;  /* headlines on a white background */ 
+  --headline-color-on-color: #5065A8; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #5065A8; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #5065A8; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #F2EEE4;
+  --nav-link-color: #E6F0EC;
+  --nav-background-color: #5065A8;
+  --nav-hover-link-color: #5065A8;
+  --nav-hover-background-color: #E6F0EC;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+h1 {
+    grid-column: 2/10;
+    grid-row: 1;
+
+    margin: 50px;
+}
+
+#temple {
+    grid-column: 5/-2;
+    grid-row: 2;
+    position: relative;
+    z-index: -1;
+}
+
+#temple > img {
+    width:100%;
+    box-shadow: -5px 5px 10px #6f7364;
+}
+
+#temple + p {
+    grid-column: 4/13;
+    grid-row: 3;
+}
+
+#temple > p {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+}
+
+.pic_title {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    border-radius: 5px;
+    padding: 0 15px 0;
+}
+
+#baptismal_font {
+    grid-column: 2/13;
+    grid-row: 4;
+
+    position: relative;
+    margin: 200px 50px 150px 0;
+}
+
+#baptismal_font > p {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+}
+
+#baptismal_font > img {
+    width: 100%; 
+    box-shadow: -5px 5px 10px #6f7364;
+}
+
+#baptismal_font + p {
+    grid-column: 13/-1;
+    grid-row: 4;
+
+    margin: auto 30px 150px auto;
+}
