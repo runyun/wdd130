@@ -70,6 +70,7 @@ h1 {
 
     position: relative;
     margin: 200px 50px 150px 0;
+    z-index: -1;
 }
 
 #baptismal_font > p {
